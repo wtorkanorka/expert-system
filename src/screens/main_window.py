@@ -16,29 +16,20 @@ class MainWindow(QMainWindow):
         self.init_ui()
 
     def init_ui(self):
-        # Создаем основной контейнер
         self.container = QWidget(self)
         self.setCentralWidget(self.container)
-
-        # Создаем слой для фона
         self.background_label = QLabel(self.container)
         self.background_label.setGeometry(0, 0, 800, 600)
-
-        # Загружаем ваш GIF из корневого каталога
-        self.movie = QMovie('backgound.gif')
+        self.movie = QMovie('assets/backgound.gif')
         self.movie.setScaledSize(self.size())
         self.background_label.setMovie(self.movie)
         self.movie.start()
-
-        # Создаем слой для контента
         self.content_widget = QWidget(self.container)
         self.content_widget.setGeometry(0, 0, 800, 600)
         self.content_widget.setAttribute(Qt.WidgetAttribute.WA_TranslucentBackground)
-
-        # Создаем кнопку внутри content_widget
         self.start_button = QPushButton('Начать опрос', self.content_widget)
         self.start_button.setFixedSize(200, 50)
-        self.start_button.move(300, 275)  # Позиционируем кнопку по центру
+        self.start_button.move(300, 275) 
         self.start_button.clicked.connect(self.start_survey)
 
     def start_survey(self):

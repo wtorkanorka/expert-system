@@ -1,8 +1,6 @@
 class KnowledgeBase:
     def __init__(self):
-        # Список вопросов с вариантами ответов и приоритетами
         self.questions = [
-            # Вопрос о важности типа проектов
             {
                 'question': 'Насколько для вас важен тип проектов, которые вы будете разрабатывать?',
                 'options': [
@@ -12,7 +10,6 @@ class KnowledgeBase:
                 ],
                 'attribute': 'project_type_priority',
             },
-            # Вопрос о типе проектов
             {
                 'question': 'Какой тип проектов вы планируете разрабатывать?',
                 'options': [
@@ -26,7 +23,6 @@ class KnowledgeBase:
                     {'text': 'Десктопные приложения', 'weights': {'desktop': 5}},
                 ],
             },
-            # Вопрос о важности парадигмы программирования
             {
                 'question': 'Насколько для вас важна парадигма программирования?',
                 'options': [
@@ -36,7 +32,6 @@ class KnowledgeBase:
                 ],
                 'attribute': 'paradigm_priority',
             },
-            # Вопрос о парадигме программирования
             {
                 'question': 'Какие парадигмы программирования вы предпочитаете?',
                 'options': [
@@ -48,7 +43,6 @@ class KnowledgeBase:
                     {'text': 'Не имеет значения', 'weights': {}},
                 ],
             },
-            # Вопрос о важности производительности
             {
                 'question': 'Насколько для вас важна производительность?',
                 'options': [
@@ -58,7 +52,6 @@ class KnowledgeBase:
                 ],
                 'attribute': 'performance_priority',
             },
-            # Вопрос о важных характеристиках
             {
                 'question': 'Что для вас важнее всего?',
                 'options': [
@@ -71,7 +64,6 @@ class KnowledgeBase:
                     {'text': 'Масштабируемость', 'weights': {'scalability': 5}},
                 ],
             },
-            # Вопрос о важности типизации
             {
                 'question': 'Насколько для вас важна система типизации?',
                 'options': [
@@ -81,7 +73,6 @@ class KnowledgeBase:
                 ],
                 'attribute': 'typing_priority',
             },
-            # Вопрос о типизации
             {
                 'question': 'Какую систему типизации вы предпочитаете?',
                 'options': [
@@ -90,7 +81,6 @@ class KnowledgeBase:
                     {'text': 'Не имеет значения', 'weights': {}},
                 ],
             },
-            # Вопрос о важности платформ
             {
                 'question': 'Насколько для вас важна целевая платформа?',
                 'options': [
@@ -100,7 +90,6 @@ class KnowledgeBase:
                 ],
                 'attribute': 'platform_priority',
             },
-            # Вопрос о целевых платформах
             {
                 'question': 'Какие платформы вы нацелены поддерживать?',
                 'options': [
@@ -113,10 +102,7 @@ class KnowledgeBase:
                     {'text': 'Кроссплатформенность', 'weights': {'cross_platform': 5}},
                 ],
             },
-            # Дополнительные вопросы можно добавить по аналогии
         ]
-
-        # Словарь языков с обновленными характеристиками
         self.languages = {
             'Python': {
                 'web': 4,
@@ -334,8 +320,6 @@ class KnowledgeBase:
                 'scalability': 5,
                 'advanced': 5,
             },
-            # Добавьте дополнительные языки и их характеристики
         }
-
     def get_questions(self):
         return self.questions
