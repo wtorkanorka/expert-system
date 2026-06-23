@@ -2,7 +2,7 @@ class KnowledgeBase:
     def __init__(self):
         self.questions = [
             {
-                'question': 'Насколько для вас важен тип проектов, которые вы будете разрабатывать?',
+                'question': 'Какую роль играет тип проектов в вашем выборе языка?',
                 'options': [
                     {'text': 'Очень важен', 'priority': 5},
                     {'text': 'Важен', 'priority': 3},
@@ -11,7 +11,7 @@ class KnowledgeBase:
                 'attribute': 'project_type_priority',
             },
             {
-                'question': 'Какой тип проектов вы планируете разрабатывать?',
+                'question': 'С какими типами проектов вы планируете работать?',
                 'options': [
                     {'text': 'Веб-приложения', 'weights': {'web': 5}},
                     {'text': 'Мобильные приложения', 'weights': {'mobile': 5}},
@@ -24,7 +24,7 @@ class KnowledgeBase:
                 ],
             },
             {
-                'question': 'Насколько для вас важна парадигма программирования?',
+                'question': 'Учитываете ли вы парадигму программирования при выборе языка?',
                 'options': [
                     {'text': 'Очень важна', 'priority': 5},
                     {'text': 'Важна', 'priority': 3},
@@ -33,7 +33,7 @@ class KnowledgeBase:
                 'attribute': 'paradigm_priority',
             },
             {
-                'question': 'Какие парадигмы программирования вы предпочитаете?',
+                'question': 'ККакие парадигмы вам ближе?',
                 'options': [
                     {'text': 'Объектно-ориентированное программирование (ООП)', 'weights': {'oop': 5}},
                     {'text': 'Функциональное программирование', 'weights': {'functional': 5}},
@@ -44,7 +44,7 @@ class KnowledgeBase:
                 ],
             },
             {
-                'question': 'Насколько для вас важна производительность?',
+                'question': 'Насколько критична для вас производительность языка?',
                 'options': [
                     {'text': 'Критически важна', 'priority': 5},
                     {'text': 'Важна', 'priority': 3},
@@ -53,7 +53,7 @@ class KnowledgeBase:
                 'attribute': 'performance_priority',
             },
             {
-                'question': 'Что для вас важнее всего?',
+                'question': 'Какие критерии для вас приоритетны?',
                 'options': [
                     {'text': 'Высокая производительность', 'weights': {'performance': 5}},
                     {'text': 'Простота изучения и использования', 'weights': {'easy_to_learn': 5}},
@@ -65,7 +65,7 @@ class KnowledgeBase:
                 ],
             },
             {
-                'question': 'Насколько для вас важна система типизации?',
+                'question': 'Важна ли для вас строгость типизации?',
                 'options': [
                     {'text': 'Очень важна', 'priority': 5},
                     {'text': 'Важна', 'priority': 3},
@@ -74,7 +74,7 @@ class KnowledgeBase:
                 'attribute': 'typing_priority',
             },
             {
-                'question': 'Какую систему типизации вы предпочитаете?',
+                'question': 'Какой вариант типизации вы предпочитаете?',
                 'options': [
                     {'text': 'Статическая типизация', 'weights': {'static_typing': 5}},
                     {'text': 'Динамическая типизация', 'weights': {'dynamic_typing': 5}},
@@ -82,7 +82,7 @@ class KnowledgeBase:
                 ],
             },
             {
-                'question': 'Насколько для вас важна целевая платформа?',
+                'question': 'Влияет ли целевая платформа на ваш выбор?',
                 'options': [
                     {'text': 'Очень важна', 'priority': 5},
                     {'text': 'Важна', 'priority': 3},
@@ -91,7 +91,7 @@ class KnowledgeBase:
                 'attribute': 'platform_priority',
             },
             {
-                'question': 'Какие платформы вы нацелены поддерживать?',
+                'question': 'Какие платформы вы планируете поддерживать?',
                 'options': [
                     {'text': 'Windows', 'weights': {'windows': 5}},
                     {'text': 'Linux', 'weights': {'linux': 5}},
